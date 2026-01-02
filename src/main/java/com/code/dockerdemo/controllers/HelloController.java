@@ -12,9 +12,9 @@ public class HelloController {
 
     @GetMapping(value = "/sayHello/{name}")
     public ResponseEntity<String> sayHello(@PathVariable String name) {
-        return ResponseEntity.ok("Hello " + name);
+        return ResponseEntity.ok("Hello " + name + ", Welcome to Docker demo");
     }
-    @GetMapping(value = "/bye/{name}")
+    @GetMapping(value = "/sayBye/{name}")
     public ResponseEntity<String> sayBye(@PathVariable String name) {
         return ResponseEntity.ok("Bye " + name);
     }
